@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Todo App</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+<!-- Script-->
+	<nav class="navbar">
+		<div class="row">
+		  <div class="col s12">
+			<h4>To Do App</h4>	
+		  </div>
+		</div>
+	</nav>
+<!-- Seccion Lista-->
+
+	<section class=lista>
+		<!-- Primerla lista e imput para agregar tarea-->
+		<div class="row">
+           	<div class="col s12">    
+        		<ul id="list-items" id="item" ></ul>
+				<form class="add-items">
+  					<input type="text" class="form-control" id="todo-list-item" placeholder="Agregar tarea">
+   				</form>
+   			</div>
+   		</div>
+
+	<!-- Lista de tareas en curso-->
+   		<div class="row" id="todo">
+        	<div class="col s6">
+          		<h5>To Do Items</h5>	
+          		<ul id="list-items" id="item" ></ul>
+          </div>
+       </div>
+    <!-- Lista de tareas terminadas-->
+        <div class="row" id="listado">
+        	<div class="col s6">
+          		<h5>Completed Items</h5>	
+          	</div>
+         	<div> <ul id="list-items-ok"></ul>
+       	 	</div>
+       	 </div>      
+	</section>
+
+<!-- Script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>	
+</body>
+</html>
